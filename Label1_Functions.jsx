@@ -19,7 +19,7 @@ function setKeyTime(layer, time1, time2)
 
 function createComposition(duration, label_name)
 {
-    var newComp = app.project.items.addComp(label_name, 1100, 120, 1, duration, 30);
+    var newComp = app.project.items.addComp(label_name, 1100, 120, 1, duration, 30.0);
     var labelCompIndex = getCompIndex ("Label1");
     var labelComp = app.project.item(labelCompIndex);
     newComp.bgColor = [0.0,0.0,1.0];

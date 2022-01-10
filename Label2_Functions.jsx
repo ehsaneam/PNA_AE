@@ -19,8 +19,8 @@ function setKeyTime(item, time1, time2)
 
 function createComposition(duration, comp_name, rect_w,mini_label_count)
 {
-    var newComp = app.project.items.addComp(comp_name, rect_w, 180, 1, duration, 30);
-    var labelCompIndex = getCompIndex ("Label3");
+    var newComp = app.project.items.addComp(comp_name, rect_w, 180, 1, duration, 30.0);
+    var labelCompIndex = getCompIndex("Label2");
     var labelComp = app.project.item(labelCompIndex);
    
     //~ Background

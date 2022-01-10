@@ -2,17 +2,18 @@
 
 var effect_duration = 1.0;
 var rect_w = 1000; 
-var label_main = "Implement Bode Plot Mode"
+var label_main = "Loopback Demonstration"
 
 var ml_count = 3;                        //mini label count
-var ml_start=[5.0, 15.0, 25.0];       //mini label start time
-var ml_duration = [5.0, 5.0, 5.0];  //mini label duration
-var ml_end = 2.0;                       //last mini label ending
-var ml_text = ["Show Only Phase or Magnitude", "Place \"Add Marker\" Inside Edit Menu", "Delete Marker by Right Click", "Marker Selection and Highlight"]; //text array
+var ml_start=[2.0, 12.0 + 7.0/30.0, 18.0 + 12.0/30.0];       //mini label start time
+var ml_duration = [10.0, 5.0 + 5.0/30.0, 6.0];  //mini label duration
+var ml_end = 1.0;                       //last mini label ending
+var ml_text = ["Generate Sine Waveform on Dev2, Spectrum on Dev1", "I/Q Oscilloscope Mode", 
+               "I/Q Trig Level"]; //text array
 
 var comp_duration = ml_start[ml_start.length-1] + ml_duration[ml_duration.length-1] + ml_end;
 
-var activeComp = createComposition (comp_duration, label_main, rect_w, ml_count);
+var activeComp = createComposition(comp_duration, label_main, rect_w, ml_count);
 
 //Delaying 1 frame is used for preventing revalue keyframes accidentally.
 
